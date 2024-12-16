@@ -1,0 +1,224 @@
+/*
+    filename: style.css
+    author: Minh Hieu Tran
+    created: 12/04/2024
+    last modified: 19/04/2024
+    description: CSS styles for Personal Project - OnlyforSin
+*/
+
+@import url("https://fonts.googleapis.com/css2?family=Indie+Flower&family=Roboto&display=swap");
+@import url("https://fonts.cdnfonts.com/css/poetsen-one");
+
+/* ============================== GLOBAL STYLES ============================== */
+* {
+    text-decoration: none;
+    outline: none;
+    scroll-behavior: smooth;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Poetsen One", "Montserrat", sans-serif;
+    color: bisque;
+    text-shadow: 2px 1px 2px rgba(0, 0, 0, 0.3);
+
+    margin: 0;
+    padding: 0;
+
+    box-sizing: border-box;
+
+    display: flex;
+    flex-direction: column;
+
+    background-image:
+        /* radial-gradient(ellipse at 30% 0, rgba(83, 81, 81, 0.5), rgba(255, 255, 255, 0.5) 50%),
+    radial-gradient(ellipse at 80% 80%, rgba(83, 81, 81, 0.5), rgba(255, 255, 255, 0.5) 50%); */
+        url("images/background3.jpeg");
+    background-size: 100%;
+}
+
+:root {
+    --button-color: rgb(0, 0, 0);
+    --button-background: linear-gradient(45deg,
+            rgba(255, 0, 0, 0.5),
+            rgba(0, 0, 0, 0.3));
+    --secondary-color: #fff;
+}
+
+/* ============================== HEADER STYLES ============================== */
+
+.header img {
+    rotate: 180deg;
+    opacity: 0.5;
+    margin: 0;
+    padding: 0;
+    width: 110%;
+    position: absolute;
+    z-index: -2;
+    right: 0%;
+}
+
+.nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin: 2rem 10rem;
+}
+
+.logo {
+    display: flex;
+}
+
+.nav-links {
+    display: flex;
+    gap: 2rem;
+}
+
+.nav-links li {
+    list-style: none;
+}
+
+.nav-links li a {
+    text-decoration: none;
+}
+
+/* ============================== HOMEPAGE STLYES ============================== */
+
+.background-images img {
+    opacity: 0.3;
+    position: absolute;
+    width: 100%;
+}
+
+.position-relative {
+    position: relative;
+}
+
+.intro-container {
+    display: flex;
+    align-items: center;
+    /* Vertically center the content */
+    margin: 2rem 10rem;
+}
+
+.intro-content {
+    flex: 1;
+    /* Take up remaining space */
+    font-family: "Poetsen One", "Montserrat", sans-serif;
+    font-size: 3rem;
+    letter-spacing: 0.2rem;
+    text-shadow: 3px 2px 2px rgba(0, 0, 0, 0.6);
+}
+
+.image-content {
+    flex: 1;
+    /* Take up remaining space */
+    text-align: -webkit-center;
+    /* Align the image to the right */
+}
+
+.image-content img {
+    max-width: 100%;
+    /* Ensure the image doesn't exceed its container */
+    height: auto;
+    /* Maintain aspect ratio */
+    width: 60%;
+    border-radius: 100%;
+}
+
+.imgtop {
+    border: 3px solid rgba(255, 228, 196, 0.507);
+}
+
+.box-vector {
+    position: absolute;
+    width: 50%;
+    top: -5rem;
+    left: 5rem;
+    z-index: -1;
+}
+
+.tasks {
+    display: flex;
+    flex-direction: column;
+    margin: 2rem 24rem;
+}
+
+.firstrow {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    margin-top: 4rem;
+}
+
+.secondrow {
+    display: flex;
+    justify-content: space-between;
+    gap: 2rem;
+    margin-top: 4rem;
+}
+
+.firstrow p, .secondrow p {
+    padding: 0.5rem 1rem;
+    border-radius: 5rem;
+    background-color: rgba(0, 0, 0, 0.3);
+    color: bisque;
+}
+
+/* ============================== REWARD STYLES ============================== */
+
+.reward-image {
+    width: 8rem;
+    height: 8rem;
+}
+
+/* ============================== FOOTER STYLES ============================== */
+
+.footer {
+    display: flex;
+    align-items: center;
+}
+
+.footer-vector {
+    opacity: 1;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    position: absolute;
+    z-index: -2;
+}
+
+.footer-image {
+    width: 8rem;
+}
+
+.contact-me {
+    padding: 2rem 10rem;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    gap: 1rem;
+    width: 100%;
+    font-family: "Poetsen One";
+    justify-content: space-between;
+}
+
+.contact-me a {
+    padding: 0.2em 0.6em;
+    font-size: 1.3rem;
+    color: var(--button-color);
+    text-align: center;
+}
+
+.contact-me aside {
+    flex: 1;
+}
+
+.login-text, .tasks {
+    color:black;
+}
+
+input, label {
+    color: black;
+}
